@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README.md</title><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+.typora-export #write { margin: 0px auto; }
+#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+#write li > table:first-child { margin-top: -20px; }
+img { max-width: 100%; vertical-align: middle; }
+input, button, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+::before, ::after, * { box-sizing: border-box; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.typora-export p { white-space: normal; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-radius: 4px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
+.footnotes + .footnotes { margin-top: -1em; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li p, li .mathjax-block { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+@media print {
+  html, body { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
+  p { orphans: 4; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0mm; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
+.task-list { list-style-type: none; }
+.task-list-item { position: relative; padding-left: 1em; }
+.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); text-decoration: none; }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+.md-tag { opacity: 0.5; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: monospace; }
+code { text-align: left; }
+h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
+a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background: transparent !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('file:////home/adam/.config/Typora/themes/github/400.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('file:////home/adam/.config/Typora/themes/github/400i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('file:////home/adam/.config/Typora/themes/github/700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('file:////home/adam/.config/Typora/themes/github/700i.woff') format('woff')
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write{
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 20px 30px 40px 30px;
+	padding-top: 20px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:////home/adam/.config/images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-bottom: 1px solid #ddd;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dddddd;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #cccccc;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-gutters {
+    border-right: 1px solid #ddd;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+.task-list{
+	padding-left: 0;
+}
+
+.task-list-item {
+	padding-left:32px;
+}
+
+.task-list-item input {
+  top: 3px;
+  left: 8px;
+}
+
+@media screen and (min-width: 914px) {
+    /*body {
+        width: 854px;
+        margin: 0 auto;
+    }*/
+}
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag{
+	color: inherit;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>Reaper tutorial</h1><p>This is a tutorial for the web scraping software Reaper.</p><p>Reaper is software that&#39;s used extensively in COMU3120. If you&#39;ve already done COMU3120, you can <a href='#header-n207'>skip steps 1-4</a> and set up Reaper yourself.</p><p>Everyone in your group should attempt to complete this tutorial, but you are not required to finish it if:</p><ul><li>You don&#39;t have a computer with you</li><li>Reaper won&#39;t start on your computer</li><li>Twitter won&#39;t let you use their API</li></ul><p>As you follow this tutorial, if you try something and it doesn&#39;t work, read the notes under the <a href='#header-n47'>Help</a> heading before asking a tutor.</p><p>If you need help with this task outside of class, there will be a pinned post in the COMU1130 facebook group that you can comment on.</p><p>Reaper works on the following operating systems:</p><ul><li><p>Windows</p><ul><li>7</li><li>8</li><li>10</li></ul></li><li><p>Mac OS</p><ul><li>Sierra</li></ul></li></ul><p>If you don&#39;t have a computer with one of those operating systems, Reaper will not start, and you won&#39;t be able to do the tutorial. Don&#39;t try to update your computer during class, you won&#39;t have time.</p><h1><a name='header-n47' class='md-header-anchor '></a>Help</h1><h2><a name='header-n48' class='md-header-anchor '></a>Reaper won&#39;t start</h2><p>You need to make sure that you&#39;re using Windows 7 or higher, or macOS Sierra. If not, you won&#39;t be able to complete the tutorial.</p><h3><a name='header-n51' class='md-header-anchor '></a>I&#39;m using macOS Sierra and it&#39;s still not starting</h3><p>Open up the app store and check the updates tab. If there is an option to install macOS Sierra, then you are not using macOS Sierra. Don&#39;t install the update in class because it will take too long</p><h2><a name='header-n54' class='md-header-anchor '></a>I downloaded Reaper to my Mac, but when I open it it says that it can&#39;t be opened because it&#39;s from an unidentified developer</h2><p>You can&#39;t open Reaper initially by double-clicking on it. You need to right-click it, and then in the right-click menu, select <code>Open</code>. Then click &#39;Ok&#39; when the next window pops up</p><h2><a name='header-n57' class='md-header-anchor '></a>Twitter won&#39;t let me give it my phone number</h2><h3><a name='header-n58' class='md-header-anchor '></a>The number is used by another account</h3><p>If you&#39;ve used that number to authenticate another Twitter account, complete this process on that twitter account instead</p><h3><a name='header-n61' class='md-header-anchor '></a>Some other error</h3><p>Sometimes when a lot of people in one location try to do this at once, Twitter thinks that something fishy is going on and won&#39;t allow anyone else to do it.</p><p>If this is the case, you can ask someone in your team who has signed up, to create another twitter app by following the process at <a href='#header-n151'>Step 4</a>, and sending you the keys.</p><p>Make sure that person creates another app, Reaper won&#39;t work if two people are downloading something with the same set of keys</p><h2><a name='header-n68' class='md-header-anchor '></a>When I click &#39;Download&#39; in Reaper, nothing happens, or an error pops up</h2><ol start='' ><li>You might just need to wait a bit, give it 15 seconds</li><li>Make sure you&#39;re connected to the internet</li><li>Make sure you gave the correct Twitter username (no spaces or incorrect characters). Try opening up your browser and typing in <code>twitter.com/</code> and then copy what you put in the username box</li><li>Make sure you gave Reaper the correct API keys (no spaces, and you copied the entire string)</li></ol><h2><a name='header-n82' class='md-header-anchor '></a>Reaper says &#39;Too many table fields to display&#39; when I download data</h2><p>That&#39;s fine. All it means is that there are a lot of columns in your data, and rather than displaying them all as it&#39;s downloading and wasting CPU resources, it&#39;s choosing not to display them. Once the download is complete, just click the button to save the data.</p><h2><a name='header-n85' class='md-header-anchor '></a>The download completed, but it&#39;s just an empty screen</h2><p>You might be looking at the tweets of a protected user. Try looking at the tweets of another.</p><h2><a name='header-n89' class='md-header-anchor '></a>I saved the CSV file that Reaper gave me, but I can&#39;t figure out where I put it</h2><p>You probably saved it in a hidden foler at <code>~/.config/reaper</code>. You can just save the file again somewhere else by clicking the button again.</p><h1><a name='header-n93' class='md-header-anchor '></a>Guide</h1><h2><a name='header-n94' class='md-header-anchor '></a>Step 1 - Download Reaper</h2><p>In Learning Resources, there is a folder called Reaper. Download the macOS version if you&#39;re using a Mac, and the Windows version in you&#39;re using Windows.</p><h2><a name='header-n97' class='md-header-anchor '></a>Step 2 - Run Reaper</h2><h3><a name='header-n98' class='md-header-anchor '></a>macOS</h3><ol start='' ><li>Download the zip file appropriate to your platform</li><li>Extract the zip file</li><li>Open finder</li><li>Navigate to the folder (Downloads) containing the extracted file</li><li>Right click Reaper</li><li>Click Open</li><li>Click &#39;Ok&#39;</li></ol><p>You should now see the Reaper welcome menu. Continue past this sceeen</p><h3><a name='header-n123' class='md-header-anchor '></a>Windows</h3><ol start='' ><li>Download the zip file appropriate to your platform</li><li>Extract the zip file</li><li>Navigate to the extracted folder reaper</li><li>double-click reaper.exe</li></ol><p>You should now see the Reaper welcome menu. Continue past this sceeen</p><h2><a name='header-n139' class='md-header-anchor '></a>Step 3 - Set up Reaper</h2><p>Reaper should now look like this:</p><p><img src='img1.png' alt='' /></p><p>This is the main window of Reaper. You can change the platform you&#39;re downloading from by changing the tabs in this window
+If in the top menu (the very top bar on macOS) you click <code>Settings</code> -&gt; <code>Authentication</code> you are taken to another window</p><p><img src='img2.png' alt='' /></p><p>This is where you need to give your Twitter API keys</p><h2><a name='header-n151' class='md-header-anchor '></a>Step 4 - Get API keys</h2><p>You need to sign in to twitter. Try doing so with the twitter account you just tweeted from in the debates</p><ol start='' ><li>Make sure that twitter has your mobile phone details by going <a href='https://twitter.com/settings/devices'>here</a> and adding your phone (if not already there). You cannot get an API key without doing this step</li><li>Visit <a href='https://apps.twitter.com/'>https://apps.twitter.com/</a> and sign up for the twitter developer platform</li><li>Create a new app by going <a href='https://apps.twitter.com/app/new'>here</a>, or clicking the &#39;Create New App&#39; button</li><li>Give your application any name, make sure it&#39;s unique like <code>COMU1130 - Team name bot</code></li><li>Give it some some description like <code>COMU1130 scraping app</code></li><li>Give it the website <code>https://uq.edu.au</code></li><li>Put the same thing into the callback url</li><li>Tick the box to agree to the developer agreement</li><li>Click the create button</li></ol><p><img src='img3.png' alt='' /></p><p>You&#39;ll then be taken to this page:</p><p><img src='img4.png' alt='' /></p><p>Click the &#39;Keys and Access Tokens&#39; tab</p><p>On that page, click &#39;Create my access token&#39;</p><p><img src='img5.png' alt='' /></p><p>Now you need to copy the text from the following 4 highlighted locations on that page, into the authentication window in Reaper.</p><p>It&#39;s important that you copy all the text, and that you don&#39;t copy any extra space at the end. Don&#39;t assume that you&#39;ve done this correctly. Once you&#39;ve copied it in make sure that there isn&#39;t any whitespace</p><p><img src='img6.png' alt='' /></p><p>Consumer Key -&gt; App Key
+Consumer Secret -&gt; App Secret
+Access Token -&gt; OAuth Token
+Access Token Secret -&gt; OAuth token secret</p><p>Once you&#39;ve copied that in, click &#39;Done&#39; to take you back to the main menu</p><h2><a name='header-n207' class='md-header-anchor '></a>Step 5 - Download the tweets from a Twitter user</h2><p>As a group, think of a Twitter user that you&#39;d like to analyse.</p><p>Select the &#39;User&#39; function, and give the username. The maximum number of tweets you can download is 3200.</p><p>Click the &#39;Download&#39; button</p><p><img src='img7.png' alt='' /></p><p>The download will then begin</p><p><img src='img8.png' alt='' /></p><p>Once it&#39;s complete, click &#39;Save as CSV&#39; in the bottom right corner and save the file.</p><h2><a name='header-n222' class='md-header-anchor '></a>Step 6 - Analyse the tweet</h2><p>You&#39;ve just created a CSV file. A CSV file is a text file that describes a table of data. View the file by opening it in Excel, Numbers for Mac, or Google Sheets.</p><p><img src='img9.png' alt='' /></p><p>Each tweet is represented by a row in the table. And, each tweet has an attribute like &#39;created_at&#39; or &#39;text&#39; which is shown in it&#39;s respective column.</p><p>Have a look at some of the attributes</p><p>Here are some important ones:</p><ul><li>created_at</li><li>favorite_count</li><li>in_reply_to_screen_name</li><li>place.full_name</li><li>retweet_count</li><li>text</li></ul><p>Your task is to:</p><blockquote><p>Write a blog post (one per group) about the difference between the most popular, and the least popular tweets.</p></blockquote><p>So you need to find a way to sort tweets by some attribute that best represents popularity.</p><p>If you don&#39;t know how to sort data in your spreadsheet program, follow these guides:</p><ul><li><a href='https://www.gcflearnfree.org/excel2016/sorting-data/1/'>Excel</a></li><li><a href='https://support.google.com/docs/answer/3540681?co=GENIE.Platform%253DDesktop&hl=en'>Google sheets</a></li><li><a href='https://support.apple.com/kb/PH23768?locale=en_US&viewlocale=en_US'>Numbers for Mac</a></li></ul><p>In your analysis, try to compare the most popular and least popular tweets by their text, type of tweet, location, time of day, device used, whether it was a retweet, etc. If you can identify a factor that changes the popularity of tweets, inclue it in your analysis.</p></div>
+</body>
+</html>
